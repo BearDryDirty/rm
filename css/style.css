@@ -48,7 +48,7 @@ input:-ms-input-placeholder{color:#a0a8c1;}
 .items-box li .items-mes{height: .5rem; display: list-item;border-bottom: 1px solid #e8eaee;margin-left: 1.2rem; color: #626775}
 /*公共*/
 .notice-items li{margin:.22rem .42rem; padding:0 .2rem .22rem 0; background: url(../images/icon-right.png) right center no-repeat; background-size: .15rem; border-bottom: 1px solid #ededed}
-.notice-items li span{width: 100%; color: #0d1733; display: block; font-size: .26rem}
+.notice-items li span{width: 100%; color: #0d1733; display: block; font-size: .34rem}
 .notice-items li i{color: #b0b2b9; margin-top: .1rem; width: 100%; display: block;}
 .notice-show{margin:.42rem;}
 .notice-show .notice-tit{width: 100%; color: #0d1733; display: block; font-size: .34rem}
