@@ -1,6 +1,8 @@
+body{font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;}
 .relative{position: relative;}
 .bg-white{background: #fff}
 i{font-style: normal;}
+a{text-decoration:none;-webkit-tap-highlight-color:transparent }
 .fr{float: right;}
 .pd-1rem{padding-bottom: 1rem}
 .over-x{overflow: hidden;}
