@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>首页</title>
+        <link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/swiper.css" />
+		<script type="text/javascript" src="js/flexible/flexible.js" ></script>
+	</head>
+	<body class="bg-f9 over-x">
+    <header class="blue-hd">
+        <div class="search-box relative">
+			<input type="text" placeholder="搜索您想查询的车场">
+			<a class="search-news" href="notice-list.html"><img src="images/nav_news.png"></a>
+		</div>
+        <p class="headline">本周团队数据</p>
+        <div class="hd-block">
+            <ul>
+                <li>
+                    <p>86</p>
+                    <span>新增车场</span>
+                </li>
+                <li>
+                    <p>42</p>
+                    <span>新增客户</span>
+                </li>
+                <li>
+                    <p>54</p>
+                    <span>跟进客户数</span>
+                </li>
+                <li>
+                    <p>25</p>
+                    <span>跟进次数</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+	<article class="index-swiper">
+		<div class="swiper-container">
+	      <div class="swiper-wrapper">
+	        <div class="swiper-slide"><p class="slide-tit">新增车场</p><canvas id="NewParkingLot"></canvas></div>
+			<div class="swiper-slide"><p class="slide-tit">新增客户</p><canvas id="NewCustomer"></canvas></div>
+			<div class="swiper-slide"><p class="slide-tit">跟进客户数</p><canvas id="FollowCustomer"></canvas></div>
+			<div class="swiper-slide"><p class="slide-tit">跟进次数</p><canvas id="FollowTime"></canvas></div>
+	      </div>
+	    </div>
+
+	</article>
+	<article class="bg-white pd-1rem">
+		<p class="titleline">团队动态</p>
+		<ul class="items-box">
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+			<li>
+				<img class="img" src="http://tx.haiqq.com/uploads/allimg/150323/15115A924-10.jpg">
+				<span class="items-name">李磊<i class="fr">11-06 14:23:54</i></span>
+				<span class="items-mes">采集了一个车场</span>
+			</li>
+		</ul>
+	</article>
+	<nav class="fixed-nav">
+		<a class="on" href="">
+			<i class="nav-ico1"></i>
+			<span>首页</span>
+		</a>
+		<a href="">
+			<i class="nav-ico2"></i>
+			<span>工作台</span>
+		</a>
+		<a href="">
+			<i class="nav-ico3"></i>
+			<span>我的</span>
+		</a>
+	</nav>
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/swiper/swiper.min.js"></script>
+	<script src="js/chart/chart.js"></script>
+    <script>
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		},
+	});
+    </script>
+	<script>
+
+	var NewParkingLot = {
+		labels: ["1","2","3","4","5","6","7","8","9","10","11"],
+		datasets: [
+			{
+				fillColor: "rgba(93,133,255,0.2)",
+				strokeColor: "#5d85ff",
+				pointColor: "#5d85ff",
+				pointStrokeColor: "#fff",
+				data: ["08.06","6.26","06.13","05.28","05.27","06.20","05.55","06.32","07.15","07.02","10.41"]
+			}
+	  ]
+	}
+	var NewCustomer = {
+		labels: ["1","2","3","4","5","6","7","8","9","10","11"],
+		datasets: [
+			{
+				fillColor: "rgba(93,133,255,0.2)",
+				strokeColor: "#5d85ff",
+				pointColor: "#5d85ff",
+				pointStrokeColor: "#fff",
+				data: ["08.06","1.26","06.13","05.28","05.27","06.20","05.55","06.32","07.15","07.02","10.41"]
+			}
+	  ]
+	}
+	var FollowCustomer = {
+		labels: ["1","2","3","4","5","6","7","8","9","10","11"],
+		datasets: [
+			{
+				fillColor: "rgba(93,133,255,0.2)",
+				strokeColor: "#5d85ff",
+				pointColor: "#5d85ff",
+				pointStrokeColor: "#fff",
+				data: ["08.06","04.26","06.13","05.28","05.27","06.20","05.55","06.32","07.15","07.02","10.41"]
+			}
+	  ]
+	}
+	var FollowTime = {
+		labels: ["1","2","3","4","5","6","7","8","9","10","11"],
+		datasets: [
+			{
+				fillColor: "rgba(93,133,255,0.2)",
+				strokeColor: "#5d85ff",
+				pointColor: "#5d85ff",
+				pointStrokeColor: "#fff",
+				data: ["08.06","8.26","06.13","05.28","05.27","06.20","05.55","06.32","07.15","07.02","10.41"]
+			}
+	  ]
+	}
+
+	var CtxLine2 = document.getElementById("NewParkingLot").getContext("2d");
+	window.myLine = new Chart(CtxLine2).Line(NewParkingLot, {
+		responsive: true,
+		scaleShowGridLines : false,
+		pointDotStrokeWidth : 2,
+	});
+	var CtxLine2 = document.getElementById("NewCustomer").getContext("2d");
+	window.myLine = new Chart(CtxLine2).Line(NewCustomer, {
+		responsive: true,
+		scaleShowGridLines : false,
+		pointDotStrokeWidth : 2,
+	});
+	var CtxLine2 = document.getElementById("FollowCustomer").getContext("2d");
+	window.myLine = new Chart(CtxLine2).Line(FollowCustomer, {
+		responsive: true,
+		scaleShowGridLines : false,
+		pointDotStrokeWidth : 2,
+	});
+	var CtxLine2 = document.getElementById("FollowTime").getContext("2d");
+	window.myLine = new Chart(CtxLine2).Line(FollowTime, {
+		responsive: true,
+		scaleShowGridLines : false,
+		pointDotStrokeWidth : 2,
+	});
+
+	</script>
+
+	</body>
+</html>

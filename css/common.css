@@ -1,0 +1,70 @@
+.common-hd{height: .88rem;line-height: .88rem;box-shadow: 0px 1px 5px rgba(229, 231, 236,0.8);text-align: center;font-size: .34rem;}
+.common-hd .return{position: absolute;left: .42rem; color:#4397ff;font-size: .3rem;background: url("../images/nav_return.png")left no-repeat;background-size: .2rem .28rem; padding-left:.32rem; }
+.blue-hd{background-color: #4372fd;color: #fff;font-size: .34rem;height: 3.01rem;}
+.blue-hd .tit{height: .93rem;line-height: .93rem;text-align: center;}
+.blue-hd .headline{padding:.22rem .42rem;font-size: .32rem;letter-spacing: 1px;}
+.blue-hd .hd-block{position: absolute; margin:.2rem .42rem;background-color: #fff;height: 1.72rem;border-radius: .06rem;width: calc(100% - .84rem);box-shadow: 0px 2px 2px rgba(239,239,244,1)}
+.blue-art{margin-top:1rem;}
+.blue-hd .hd-block li{float: left;width: 25%;text-align: center;}
+.blue-hd .hd-block li p{font-size: .48rem;color:#0d1733;margin:.3rem 0 .1rem;}
+.blue-hd .hd-block li span{color:#b0b2b9;font-size: .26rem;}
+.col-black1{color:#0d1733}
+
+/*工作台*/
+.workbench-nav{background-color:white;color:#0d1733;font-size: .24rem;}
+.workbench-nav li{float: left;width: 25%;height: 1.88rem;text-align: center;border-right:solid 1px #ededed;border-bottom:solid 1px #ededed;}
+.workbench-nav li img{width: .64rem;margin-top:.45rem;}
+
+/*person*/
+.person-hd .tit{height: .78rem;line-height: .78rem;font-size: .34rem;color: #111;text-align: center}
+.person-info{margin:.7rem .42rem 0;}
+.person-basic{float: left;}
+.person-photo{float: right;width: 1.4rem;height: 1.4rem;}
+.person-photo img{width: 1.4rem;height:1.4rem;border-radius: .7rem;}
+.person-name{font-size: .4rem;}
+.person-job{font-size: .3rem;padding: .06rem 0 .02rem;}
+.person-mail{font-size: .26rem;color:#b0b2b9;}
+.person-bd{margin-top:1rem;}
+.person-bd ul{margin:0 .42rem;font-size: .32rem;}
+.person-bd ul li{line-height: 1.18rem;border-bottom:solid 1px #ededed;background: url("../images/icon-right.png")right no-repeat;background-size: .1rem .16rem;}
+.person-bd .opinion{background:url("../images/") }
+
+/*personInfo*/
+.personInfo-photo{margin:.84rem 0 .25rem;text-align: center;}
+.personInfo-photo img{width:1.1rem;height:1.1rem;border-radius: .55rem;}
+.personInfo-name{text-align: center;font-size: .48rem;}
+.personInfo-basic{margin:.65rem .42rem 0 .42rem;font-size: .32rem;}
+.personInfo-basic li{line-height: 1.14rem;}
+.personInfo-basic li span{float: right;color: #626775;}
+
+/*about*/
+.about-main{margin:1.57rem .76rem 0 .76rem;text-align: center;}
+.about-main img{max-width: 2.7rem;}
+.about-version{font-size: .34rem;margin: .35rem 0 1.07rem 0;}
+.about-cont{color:#626775;font-size: .3rem;text-align: left;line-height: 1.5;letter-spacing: 1px;}
+
+/*parkLocate*/
+body{line-height: 1.5;}
+.art-map{position: absolute;width: 100%;height: 100%; top: 0;padding-top:.88rem;}
+.parkMap {width:100%; height: 100%; }
+.map-tit-wrap{position: absolute;top: 1.18rem;z-index: 9;width: 100%;text-align: center;}
+.map-tit{width:2.54rem;height:.56rem;line-height: .56rem;font-size: .26rem;background: rgba(0,0,0,.5);color: #fff;margin: 0 auto;border-radius: .04rem;;}
+/*去掉高德地图版本号*/
+.amap-copyright {opacity:0;}
+.park-box{position: absolute;bottom:1.62rem;width:100%;}
+.park-info{width: 6.66rem;margin: 0 auto;padding: .38rem .3rem;background: #fff;border-radius: .1rem;font-size: .26rem;line-height: .32rem;color:#626775}
+.park-info p{margin-top:.08rem;}
+.park-info-name{font-size:.34rem;line-height:.46rem;color:#0f0f10;margin-top: 0;}
+.park-info p.park-info-person{margin-top:.26rem}
+
+/*addPark*/
+.font34{font-size: .34rem;line-height: .42rem;;}
+.add-park{margin:.56rem;font-size: .3rem;}
+.add-park-block{position: relative; margin: .18rem 0  .4rem;padding:0 .28rem; height: .84rem;background: #f7f8fa;color: #b0b2b9;}
+.add-park-block input{height: .6rem;margin-top: .12rem;border:none;background: #f7f8fa;width: 100%;}
+.add-park-block textarea{line-height: .36rem;margin-top:.38rem;height:1.8rem ; margin-top: .12rem;border:none;background: #f7f8fa;width: 100%;}
+.add-park-block .surplus{position: absolute;width: 100%;right: .24rem; bottom: .18rem;font-size: .26rem;text-align: right;}
+.geographic{margin:.24rem 0 .4rem;line-height: .42rem;;}
+.geographic span{color:#b0b2b9;}
+.add-park-photo{margin-top:.24rem;}
+.add-park-photo li{float: left;width: 1.32rem;}

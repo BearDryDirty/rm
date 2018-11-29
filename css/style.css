@@ -1,0 +1,57 @@
+.relative{position: relative;}
+.bg-white{background: #fff}
+i{font-style: normal;}
+.fr{float: right;}
+.pd-1rem{padding-bottom: 1rem}
+.over-x{overflow: hidden;}
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;height: 0;font-size:0;}
+.common-hd{height: .88rem;line-height: .88rem;box-shadow: 0px 1px 5px rgba(229, 231, 236,0.8);text-align: center;font-size: .34rem;}
+.common-hd .return{position: absolute;left: .42rem; color:#4397ff;font-size: .3rem;background: url("../images/nav_return.png")left no-repeat;background-size: .2rem .28rem; padding-left:.32rem; }
+.blue-hd{background-color: #4372fd;color: #fff;font-size: .34rem;height: 3.01rem;}
+.blue-hd .tit{height: .93rem;line-height: .93rem;text-align: center;}
+.blue-hd .search-box{padding: .22rem .42rem}
+.blue-hd .search-box input{width: 87%; height: .69rem; background: #fff url("../images/nav_ic_search.png") right .26rem center no-repeat; background-size:  .32rem;border: 0; outline: none; padding: 0; border-radius: .06rem; font-size: .26rem; text-indent: .42rem}
+.blue-hd .search-box .search-news{height: .69rem; width: .69rem;display: block; float: right; line-height: .69rem; text-align: right;}
+.blue-hd .search-box .search-news img{vertical-align: middle;width: .4rem}
+input::-webkit-input-placeholder{color:#a0a8c1;}
+input::-moz-placeholder{color:#a0a8c1;}
+input:-moz-placeholder{color:#a0a8c1;}
+input:-ms-input-placeholder{color:#a0a8c1;}
+.blue-hd .headline{padding:.22rem .42rem;font-size: .32rem;letter-spacing: 1px;}
+.blue-hd .hd-block{position: absolute; margin:.2rem .42rem;background-color: #fff;height: 1.72rem;border-radius: .06rem;width: calc(100% - .84rem);box-shadow: 0px 2px 2px rgba(239,239,244,1)}
+.blue-art{margin-top:1rem;}
+.blue-hd .hd-block li{float: left;width: 25%;text-align: center;}
+.blue-hd .hd-block li p{font-size: .48rem;color:#0d1733;margin:.3rem 0 .1rem;}
+.blue-hd .hd-block li span{color:#b0b2b9;font-size: .26rem;}
+.col-black1{color:#0d1733}
+/*固定导航*/
+.fixed-nav{position: fixed; bottom: 0; z-index: 20;width: 100%; height: .93rem; background: #fff; display: flex; box-shadow: 0px -2px 2px rgba(239,239,244,1);}
+.fixed-nav .on{color: #4371ff}
+.fixed-nav a{display: block; width: 33%; height: .93rem;flex-wrap: nowrap;justify-content:space-between; text-align: center; color: #b6b9c2}
+.fixed-nav a i{padding: .2rem; background: url(../images/nav-sprite.png) center center no-repeat; background-size: .8rem; margin:.1rem auto 0 auto; display: inline-block;}
+.fixed-nav a span{width: 100%; margin: 0 auto; display: block;}
+.fixed-nav .nav-ico1{background-position: -.4rem 0}
+.fixed-nav .nav-ico2{background-position: -.4rem -.4rem}
+.fixed-nav .nav-ico3{background-position: -.4rem -.8rem}
+.fixed-nav .on .nav-ico1{background-position: 0 0}
+.fixed-nav .on .nav-ico2{background-position: 0 -.4rem}
+.fixed-nav .on .nav-ico3{background-position: 0 -.8rem}
+/*首页*/
+.index-swiper{margin-top: 1.2rem}
+.index-swiper .slide-tit{width: 100%; font-size: .26rem}
+.index-swiper canvas{width: 100% !important; height: 3rem !important}
+.titleline{height: 1.2rem;line-height: 1.2rem; margin: .42rem .42rem .22rem .42rem;font-size: .48rem;color: #0d1733; font-weight: bold; text-align: left; border-bottom: 1px solid #e8eaee}
+.items-box li{padding: 0 .42rem .22rem .42rem; overflow: hidden}
+.items-box li .img{width: .8rem; height: .8rem; border-radius: 1rem; display: block;float: left; margin-right: .4rem}
+.items-box li .items-name{height: .5rem; display: list-item; color: #0d1733; font-size: .3rem}
+.items-box li .items-name i{color: #b6b9c2; font-size: .26rem}
+.items-box li .items-mes{height: .5rem; display: list-item;border-bottom: 1px solid #e8eaee;margin-left: 1.2rem; color: #626775}
+/*公共*/
+.notice-items li{margin:.22rem .42rem; padding:0 .2rem .22rem 0; background: url(../images/icon-right.png) right center no-repeat; background-size: .15rem; border-bottom: 1px solid #ededed}
+.notice-items li span{width: 100%; color: #0d1733; display: block; font-size: .26rem}
+.notice-items li i{color: #b0b2b9; margin-top: .1rem; width: 100%; display: block;}
+.notice-show{margin:.42rem;}
+.notice-show .notice-tit{width: 100%; color: #0d1733; display: block; font-size: .34rem}
+.notice-show .notice-time{color: #b0b2b9; margin-top: .1rem; width: 100%; display: block;}
+.notice-show .notice-wen{font-size: .26rem; margin-top: .42rem; line-height: .5rem}
+.notice-show .notice-wen img{display: block; margin: .22rem auto}
