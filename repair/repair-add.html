@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>新增报修</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../js/flexible/flexible.js" ></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css">
+</head>
+<body>
+<header class="common-hd">
+    <div class="tit">
+        <span class="return">返回</span>
+        新增报修
+    </div>
+</header>
+<article>
+    <dl class="customer-info-items">
+        <dt>车场名称</dt>
+        <dd><input type="text" placeholder="车场名称"></dd>
+        <dt>客户联系电话</dt>
+        <dd><input type="text" placeholder=""></dd>
+        <dt>项目地址</dt>
+        <dd><input type="text" placeholder=""></dd>
+        <dt>故障描述</dt>
+        <dd class="relative"><span class="count-num">0/200</span><p contenteditable="true" class="contentedit"></p></dd>
+        <dt>上传故障照片</dt>
+        <dd class="upload-pic-box over-x">
+            <span class="add-upload-pic"></span>
+        </dd>
+        <p class="full-btn">保存</p>
+    </dl>
+</article>
+
+</body>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../static/common.js"></script>
+<script src="../static/customer.js"></script>
+<script src="../js/city-picker/jquery-weui.min.js"></script>
+<script src="../js/city-picker/city-picker.min.js"></script>
+<script>
+    $("#city-picker").cityPicker({
+        title: "选择省、市、区",
+    });
+</script>
+</html>

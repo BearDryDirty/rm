@@ -43,5 +43,5 @@ $(".tabs-nav li").click(function(){
 
 //客户信息
 $(function(){
-    basePost("/crm/console/customer/query/list");
+    // basePost("/crm/console/customer/query/list");
 })
