@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>写跟进</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../js/flexible/flexible.js" ></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css">
+</head>
+<body>
+<header class="common-hd">
+    <div class="tit">
+        <span class="return">返回</span>
+        写跟进
+        <a class="add" href="customer.html">保存</a>
+    </div>
+</header>
+<article>
+    <dl class="customer-info-items">
+        <dt>备注内容</dt>
+        <dd class="relative"><span class="count-num">0/200</span><p contenteditable="true" class="contentedit" placeholder="输入内容"></p></dd>
+        <dt>跟进类型</dt>
+        <dd class="follow-radio-box">
+            <label class="radio" for="radio1"><input type="radio" id="radio1" name="contacts-radio" checked>拜访</label>
+            <label class="radio" for="radio2"><input type="radio" id="radio2" name="contacts-radio">电话</label>
+            <label class="radio" for="radio3"><input type="radio" id="radio3" name="contacts-radio">微信</label>
+            <label class="radio" for="radio4"><input type="radio" id="radio4" name="contacts-radio">QQ</label>
+            <label class="radio" for="radio5"><input type="radio" id="radio5" name="contacts-radio">其他</label>
+        </dd>
+        <dt onclick="follow('112')" class="follow-contacts">跟进联系人<span class="follow-contacts-sel">李磊</span></dt>
+    </dl>
+</article>
+
+
+<article class="right-slide slide-none sel-follow">
+    <p class="right-slide-title">跟进联系人</p>
+    <ul class="customer-info-contacts">
+        <li class="on c111" data-id="111">
+            <span class="name">李雷</span>
+            <span class="tel">13699552222</span>
+        </li>
+        <li class="c112" data-id="112">
+            <span class="name">李雷</span>
+            <span class="tel">13699552222</span>
+        </li>
+    </ul>
+</article>
+
+<div class="cover none"></div>
+
+</body>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../static/common.js"></script>
+<script src="../static/customer.js"></script>
+
+</html>

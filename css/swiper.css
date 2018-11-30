@@ -633,6 +633,7 @@ button.swiper-pagination-bullet {
   padding: .2rem;
   transform: scale(1);
   display: block;
+  border-radius: .06rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -641,7 +642,7 @@ button.swiper-pagination-bullet {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  box-shadow: 0 0 4px rgba(239,239,244,1);
+  box-shadow: 0 0 5px rgba(239,239,244,1);
 }
 
 .index-swiper .swiper-slide-next{position: relative; left: -.8rem; transform: scale(.94);}

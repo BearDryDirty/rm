@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的客户</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../js/flexible/flexible.js" ></script>
+</head>
+<body class="bg-f9">
+<div id="app">
+<header class="common-hd">
+    <div class="tit">
+        <span class="return">返回</span>
+        我的客户
+        <a class="add" href="customer-info.html">创建客户</a>
+    </div>
+</header>
+<article>
+    <ul class="customer-card-items">
+        <li>
+            <a href="customer.html">
+                <span class="name">台湾科技企业育成中心</span>
+                <span class="address">福建省厦门市思明区虎园路25号</span>
+                <span class="tel">0592-3435213</span>
+                <span class="time">上次跟进时间： 2018-11-02 12:32:35</span>
+            </a>
+        </li>
+        <li>
+            <a href="customer.html">
+                <span class="name">台湾科技企业育成中心</span>
+                <span class="address">福建省厦门市思明区虎园路25号</span>
+                <span class="tel">0592-3435213</span>
+                <span class="time">上次跟进时间： 2018-11-02 12:32:35</span>
+            </a>
+        </li>
+        <li>
+            <a href="customer.html">
+                <span class="name">台湾科技企业育成中心</span>
+                <span class="address">福建省厦门市思明区虎园路25号</span>
+                <span class="tel">0592-3435213</span>
+                <span class="time">上次跟进时间： 2018-11-02 12:32:35</span>
+            </a>
+        </li>
+        <li>
+            <a href="customer.html">
+                <span class="name">台湾科技企业育成中心</span>
+                <span class="address">福建省厦门市思明区虎园路25号</span>
+                <span class="tel">0592-3435213</span>
+                <span class="time">上次跟进时间： 2018-11-02 12:32:35</span>
+            </a>
+        </li>
+    </ul>
+</article>
+</div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.16.0/axios.min.js"></script>
+<script src="../static/common.js"></script>
+<script src="../static/customer.js"></script>
+<script>
+    var vue = new Vue({
+        el:"#app",
+        mounted(){
+            axios.post('http://10.1.6.175:9111/api/v1/crm/console/customer/query/list',{
+            })
+            .then(function(response){
+              console.log(response.data);
+            })
+            .catch(function(error){
+              console.log(error);
+            });
+        }
+    })
+</script>
+</body>
+</html>

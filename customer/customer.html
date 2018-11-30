@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>客户主页</title>
+        <link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/swiper.css" />
+		<script type="text/javascript" src="../js/flexible/flexible.js" ></script>
+	</head>
+	<body class="bg-f9">
+    <header class="blue-hd blue-hd-small">
+        <div class="tit">
+			<span class="return">返回</span>
+			客户主页
+			<a class="add" href="customer-follow.html">写跟进</a>
+		</div>
+        <dl class="hd-block customer-card relative">
+			<a class="edit-btn" href="customer-info.html"><img src="../images/btn_edit.png"></a>
+            <dt>台湾科技企业禹城中心</dt>
+			<dd>电话：  13905958062</dd>
+        </dl>
+    </header>
+    <article class="customer-swiper relative">
+		<ul class="tabs-nav">
+			<li class="on">基本信息<span></span></li>
+			<li>跟进动态<span></span></li>
+		</ul>
+		<div class="tabs-tab tabs-on">
+			<ul class="tabs-main">
+				<li>
+					<span class="tit">地址：</span>
+					<span class="mes">台中市士林夜市街道292号</span>
+				</li>
+				<li>
+					<span class="tit">备注：</span>
+					<span class="mes">此用户联系人长期出差，建议打手机号，2个手机号，商务号为1398552419。个人号为13905958062</span>
+				</li>
+				<li>
+					<span class="tit">客户属性：</span>
+					<span class="mes">私有</span>
+				</li>
+			</ul>
+			<p class="tabs-titleline">联系人<a href="javascript:void(0)" onclick="contacts()">+新增</a></p>
+			<ul class="customer-info-contacts">
+				<li onclick="contacts('111')">
+		            <span class="name">李雷</span>
+		            <span class="tel">13699552222</span>
+		        </li>
+		        <li onclick="contacts('222')">
+		            <span class="name">李雷</span>
+		            <span class="tel">13699552222</span>
+		        </li>
+			</ul>
+		</div>
+		<div class="tabs-tab">
+			<ul class="tabs-follow">
+				<li>
+					<span class="time">2019-09-09 12:35:55</span>
+					<span class="tit">跟进类型：</span>
+					<span class="mes">电话</span>
+					<span class="tit">联系人：</span>
+					<span class="mes">李磊</span>
+					<span class="tit">进度内容：</span>
+					<span class="mes">安排沟通后，客户表示接受报价，让我们快点安排安装设备。</span>
+				</li>
+				<li>
+					<span class="time">2019-09-09 12:35:55</span>
+					<span class="tit">跟进类型：</span>
+					<span class="mes">电话</span>
+					<span class="tit">联系人：</span>
+					<span class="mes">李磊</span>
+					<span class="tit">进度内容：</span>
+					<span class="mes">安排沟通后，客户表示接受报价，让我们快点安排安装设备。</span>
+				</li>
+			</ul>
+		</div>
+    </article>
+	<article class="right-slide slide-none add-contacts">
+	    <p class="right-slide-title">添加联系人</p>
+	    <dl class="customer-info-items pd-1rem">
+	        <dt>姓名</dt>
+	        <dd><input type="text" placeholder=""></dd>
+	        <dt>手机号</dt>
+	        <dd><input type="text" placeholder=""></dd>
+	        <dt>邮箱</dt>
+	        <dd><input type="text" placeholder=""></dd>
+	        <dt>部门</dt>
+	        <dd><input type="text" placeholder=""></dd>
+	        <dt>职位</dt>
+	        <dd><input type="text" placeholder=""></dd>
+	        <dt>对客户的影响力</dt>
+	        <dd>
+	            <label class="radio" for="radio1"><input type="radio" id="radio1" name="contacts-radio" checked>极高</label>
+	            <label class="radio" for="radio2"><input type="radio" id="radio2" name="contacts-radio">高</label>
+	            <label class="radio" for="radio3"><input type="radio" id="radio3" name="contacts-radio">中</label>
+	        </dd>
+	    </dl>
+	    <button class="right-slide-btn transition" type="button" name="button">保存</button>
+	</article>
+	<div class="cover needclose none"></div>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../static/common.js"></script>
+	<script src="../static/customer.js"></script>
+	</body>
+</html>

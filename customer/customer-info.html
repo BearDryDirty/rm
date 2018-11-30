@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>客户信息</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../js/flexible/flexible.js" ></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css">
+</head>
+<body>
+<header class="common-hd">
+    <div class="tit">
+        <span class="return">返回</span>
+        客户信息
+        <a class="add" href="customer.html">保存</a>
+    </div>
+</header>
+<article>
+    <dl class="customer-info-items">
+        <dt><i>*</i>客户名称</dt>
+        <dd><input type="text" placeholder="完整名称"></dd>
+        <dt><i>*</i>客户电话</dt>
+        <dd><input type="text" placeholder="座机号，个人客户时填写手机号"></dd>
+        <dt><i>*</i>所在地区</dt>
+        <dd><input type="text" id="city-picker" placeholder="省、市、区" readonly></dd>
+        <dt><i>*</i>详细地址</dt>
+        <dd><input type="text" placeholder="街道、门牌号"></dd>
+        <dt>备注内容</dt>
+        <dd class="relative"><span class="count-num">0/200</span><p contenteditable="true" class="contentedit clear-mb"></p></dd>
+    </dl>
+</article>
+<article>
+    <p class="add-contacts-btn" onclick="contacts()">添加联系人 ></p>
+    <ul class="customer-info-contacts bg-f9">
+        <li onclick="contacts('111')">
+            <span class="name">李雷</span>
+            <span class="tel">13699552222</span>
+        </li>
+        <li onclick="contacts('222')">
+            <span class="name">李雷</span>
+            <span class="tel">13699552222</span>
+        </li>
+    </ul>
+</article>
+
+<!-- <article class="right-slide slide-none">
+    <p class="right-slide-title">选择客户**勘察申请页面使用</p>
+    <ul class="customer-card-list">
+        <li class="on">
+            <span class="name">台湾科技企业育成中心</span>
+            <span class="address">福建省厦门市思明区虎园路25号</span>
+            <span class="tel">0592-3435213</span>
+        </li>
+        <li>
+            <span class="name">台湾科技企业育成中心</span>
+            <span class="address">福建省厦门市思明区虎园路25号</span>
+            <span class="tel">0592-3435213</span>
+        </li>
+        <li>
+            <span class="name">台湾科技企业育成中心</span>
+            <span class="address">福建省厦门市思明区虎园路25号</span>
+            <span class="tel">0592-3435213</span>
+        </li>
+        <li>
+            <span class="name">台湾科技企业育成中心</span>
+            <span class="address">福建省厦门市思明区虎园路25号</span>
+            <span class="tel">0592-3435213</span>
+        </li>
+    </ul>
+</article> -->
+
+<article class="right-slide slide-none add-contacts">
+    <p class="right-slide-title">添加联系人</p>
+    <dl class="customer-info-items pd-1rem">
+        <dt>姓名</dt>
+        <dd><input type="text" placeholder=""></dd>
+        <dt>手机号</dt>
+        <dd><input type="text" placeholder=""></dd>
+        <dt>邮箱</dt>
+        <dd><input type="text" placeholder=""></dd>
+        <dt>部门</dt>
+        <dd><input type="text" placeholder=""></dd>
+        <dt>职位</dt>
+        <dd><input type="text" placeholder=""></dd>
+        <dt>对客户的影响力</dt>
+        <dd>
+            <label class="radio" for="radio1"><input type="radio" id="radio1" name="contacts-radio" checked>极高</label>
+            <label class="radio" for="radio2"><input type="radio" id="radio2" name="contacts-radio">高</label>
+            <label class="radio" for="radio3"><input type="radio" id="radio3" name="contacts-radio">中</label>
+        </dd>
+    </dl>
+    <button class="right-slide-btn transition" type="button" name="button">保存</button>
+</article>
+<div class="cover needclose none"></div>
+
+</body>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../static/common.js"></script>
+<script src="../static/customer.js"></script>
+<script src="../js/city-picker/jquery-weui.min.js"></script>
+<script src="../js/city-picker/city-picker.min.js"></script>
+<script>
+    $("#city-picker").cityPicker({
+        title: "选择省、市、区",
+    });
+</script>
+</html>
